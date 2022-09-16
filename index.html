@@ -6,61 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embed videos and playlists</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet"> 
+
+    <!-- Icons -->
     <script src="https://kit.fontawesome.com/33044443cd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <header>
+    <header class="container-h" id="yt-header">
 
-        <div>
+        <div class="container-h" id="yt-logo">
 
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <h3>YOUTUBE</h3>
+            <button class="simple-button"><i class="fa-solid fa-bars"></i></button>
 
+            <div class="container-h">
+                <i class="fa-brands fa-youtube"></i>
+                <h3>YouTube</h3>
+            </div>
+            
         </div>
 
-        <div>
+        <div class="container-h" id="yt-search">
 
             <input type="text" placeholder="Search">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button><i class="fa-solid fa-microphone"></i></button>
+            <button class="simple-button"><i class="fa-solid fa-microphone"></i></button>
 
         </div>
 
-        <div>
+        <div class="container-h" id="yt-user">
 
-            <button><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
-            <button><i class="fa-regular fa-bell"></i></button>
-            <img src="images/user_image.png" alt="Profile picture of the user">
+            <button class="simple-button"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+            <button class="simple-button"><i class="fa-regular fa-bell"></i></button>
+            <img src="images/user_image.png" alt="Profile picture of the user" width="32px" height="32px">
             
         </div>
 
     </header>
 
-    <div>
+    <div class="container-h" id="yt-content">
 
-        <aside>
+        <main id="yt-main">
 
-            <iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/lJIrF4YjHfQ" frameborder="0" allowfullscreen></iframe>
+            <iframe id="ytplayer" type="text/html" width="942" height="530" src="https://www.youtube.com/embed/lJIrF4YjHfQ" frameborder="0" allowfullscreen></iframe>
 
             <h3>Embed videos and playlists</h3>
 
-            <p><i class="fa-solid fa-circle-minus"></i>Hidden</p>
+            <p class="secondary-text"><i class="fa-solid fa-circle-minus"></i>Hidden</p>
 
-            <div>
+            <div class="container-h">
 
-                <p>431.097 visualizaciones - 13 may 2016</p>
+                <p class="secondary-text">431.097 visualizaciones - 13 may 2016</p>
 
                 <div>
 
-                    <button><i class="fa-regular fa-thumbs-up"></i> 1597</button>
-                    <button><i class="fa-regular fa-thumbs-down"></i> I DONT LIKE IT</button>
-                    <button><i class="fa-solid fa-share"></i>SHARE</button>
-                    <button><i class="fa-solid fa-download"></i>DOWNLOAD</button>
-                    <button><i class="fa-solid fa-square-plus"></i>SAVE</button>
-                    <button><i class="fa-solid fa-ellipsis"></i></button>
+                    <button class="simple-button"><i class="fa-regular fa-thumbs-up"></i> 1597</button>
+                    <button class="simple-button"><i class="fa-regular fa-thumbs-down"></i> I DONT LIKE IT</button>
+                    <button class="simple-button"><i class="fa-solid fa-share"></i>SHARE</button>
+                    <button class="simple-button"><i class="fa-solid fa-download"></i>DOWNLOAD</button>
+                    <button class="simple-button"><i class="fa-solid fa-square-plus"></i>SAVE</button>
+                    <button class="simple-button"><i class="fa-solid fa-ellipsis"></i></button>
 
                 </div>
 
@@ -74,11 +84,11 @@
 
                     <div>
 
-                        <img src="images/channel-profile-pic.jpg" alt="Channel's profile picture">
+                        <img src="images/channel-profile-pic.jpg" alt="Channel's profile picture" width="48px" height="48px">
 
                         <p>YouTube Help <abbr title="Verified"><i class="fa-solid fa-circle-check"></i></abbr></p>
 
-                        <p>9,29M subscribers</p>
+                        <p class="secondary-text">9,29M subscribers</p>
 
                     </div>
 
@@ -88,7 +98,7 @@
 
                 <p>If you want more information go to YouTube's Help Center:
                     <details>
-                        <summary>SHOW MORE</summary>                        
+                        <summary class="secondary-text">SHOW MORE</summary>                        
                         <a href="https://www.youtube.com/help">https://www.youtube.com/help</a>
                     </details>
                 </p>
@@ -103,7 +113,7 @@
 
                     <p>175 comments <i class="fa-solid fa-sort"></i> SORT BY</p>
                     
-                    <img src="images/user_image.png" alt="Profile picture of the user">
+                    <img src="images/user_image.png" alt="Profile picture of the user" width="40px" height="40px">
 
                     <input type="text" placeholder="Add a comment...">
 
@@ -112,42 +122,42 @@
                 <ul>
 
                     <li>
-                        <p><strong>Username</strong> 3 years ago</p>
+                        <p><strong>Username</strong> <span>3 years ago</span></p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, fuga!</p>
                         <button><i class="fa-regular fa-thumbs-up"></i></button>
                         <button><i class="fa-regular fa-thumbs-down"></i></button>
                         <button>REPLY</button>
                     </li>
                     <li>
-                        <p><strong>Username</strong> 3 years ago</p>
+                        <p><strong>Username</strong> <span>3 years ago</span></p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, incidunt.</p>
                         <button><i class="fa-regular fa-thumbs-up"></i></button>
                         <button><i class="fa-regular fa-thumbs-down"></i></button>
                         <button>REPLY</button>
                     </li>
                     <li>
-                        <p><strong>Username</strong> 3 years ago</p>
+                        <p><strong>Username</strong> <span>3 years ago</span></p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, amet!</p>
                         <button><i class="fa-regular fa-thumbs-up"></i></button>
                         <button><i class="fa-regular fa-thumbs-down"></i></button>
                         <button>REPLY</button>
                     </li>
                     <li>
-                        <p><strong>Username</strong> 3 years ago</p>
+                        <p><strong>Username</strong> <span>3 years ago</span></p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, molestias.</p>
                         <button><i class="fa-regular fa-thumbs-up"></i></button>
                         <button><i class="fa-regular fa-thumbs-down"></i></button>
                         <button>REPLY</button>
                     </li>
                     <li>
-                        <p><strong>Username</strong> 3 years ago</p>
+                        <p><strong>Username</strong> <span>3 years ago</span></p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quos!</p>
                         <button><i class="fa-regular fa-thumbs-up"></i></button>
                         <button><i class="fa-regular fa-thumbs-down"></i></button>
                         <button>REPLY</button>
                     </li>
                     <li>
-                        <p><strong>Username</strong> 3 years ago</p>
+                        <p><strong>Username</strong> <span>3 years ago</span></p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, inventore.</p>
                         <button><i class="fa-regular fa-thumbs-up"></i></button>
                         <button><i class="fa-regular fa-thumbs-down"></i></button>
@@ -158,9 +168,9 @@
 
             </section>
 
-        </aside>
+        </main>
 
-        <aside>
+        <aside id="yt-recommendations">
 
             <div>
 
@@ -174,9 +184,9 @@
 
                 <ul>
 
-                    <li>
+                    <li class="container-h">
                         <img src="images/thumbs/thumb1.jpg" alt="Thumbnail 1">
-                        <div>
+                        <div class="container-v">
                             <strong>Video name 1</strong>
                             <span>Channel 1</span>
                             <span>17.356 views</span>
@@ -184,9 +194,9 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="container-h">
                         <img src="images/thumbs/thumb2.jpg" alt="Thumbnail 1">
-                        <div>
+                        <div class="container-v">
                             <strong>Video name 2</strong>
                             <span>Channel 2</span>
                             <span>17.356 views</span>
@@ -194,9 +204,9 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="container-h">
                         <img src="images/thumbs/thumb3.jpg" alt="Thumbnail 1">
-                        <div>
+                        <div class="container-v">
                             <strong>Video name 3</strong>
                             <span>Channel 3</span>
                             <span>17.356 views</span>
@@ -204,9 +214,9 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="container-h">
                         <img src="images/thumbs/thumb4.jpg" alt="Thumbnail 1">
-                        <div>
+                        <div class="container-v">
                             <strong>Video name 4</strong>
                             <span>Channel 4</span>
                             <span>17.356 views</span>
@@ -214,9 +224,9 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="container-h">
                         <img src="images/thumbs/thumb5.jpg" alt="Thumbnail 1">
-                        <div>
+                        <div class="container-v">
                             <strong>Video name 5</strong>
                             <span>Channel 5</span>
                             <span>17.356 views</span>
@@ -224,9 +234,9 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="container-h">
                         <img src="images/thumbs/thumb6.jpg" alt="Thumbnail 1">
-                        <div>
+                        <div class="container-v">
                             <strong>Video name 6</strong>
                             <span>Channel 6</span>
                             <span>17.356 views</span>
@@ -234,9 +244,9 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="container-h">
                         <img src="images/thumbs/thumb7.jpg" alt="Thumbnail 1">
-                        <div>
+                        <div class="container-v">
                             <strong>Video name 7</strong>
                             <span>Channel 7</span>
                             <span>17.356 views</span>

@@ -1,8 +1,17 @@
+/* ----------- GENERAL ----------- */
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #bbb;
+}
+
 *::before, *, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ----------- GENERIC CLASSES ----------- */
 
 .container-v {
     display: flex;
@@ -12,4 +21,109 @@
 .container-h {
     display: flex;
     flex-direction: row;
+}
+
+.secondary-text {
+    color: var(--secondary-color)
+}
+
+.simple-button {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+/* ----------- BODY ----------- */
+
+body {
+    color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ----------- YT-HEADER ----------- */
+
+#yt-header {
+    background-color: #222;
+    height: 7vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 0 2vw;
+}
+
+/* ----------- YT-LOGO ----------- */
+
+#yt-logo {
+    width: 10%;
+    justify-content: space-between;
+}
+
+#yt-logo div {
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -1px;
+    font-size: 1.2rem;
+    width: 70%;
+    justify-content: space-between;
+}
+
+#yt-logo .fa-youtube {
+    color: #f70700;
+    font-size: 2rem;
+}
+
+/* ----------- YT-SEARCH ----------- */
+
+
+
+/* ----------- YT-USER ----------- */
+
+
+
+/* ----------- YT-CONTENT ----------- */
+
+#yt-content {
+    background-color: #111;
+    position: absolute;
+    padding: 9vh 5vw;
+}
+
+/* ----------- YT-MAIN ----------- */
+
+#yt-main {
+    width: 70%;
+    padding-right: 2rem;
+}
+
+#yt-main iframe {
+    width: 100%;
+}
+
+/* ----------- YT-RECOMMENDATIONS ----------- */
+
+#yt-recommendations {
+    width: 30%;
+}
+
+#yt-recommendations li {
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+#yt-recommendations img {
+    width: 40%;
+    height: auto;
+}
+
+#yt-recommendations strong {
+    font-size: 0.9rem;
+}
+
+#yt-recommendations span {
+    color: var(--secondary-color);
+    font-size: 0.8rem;
 }

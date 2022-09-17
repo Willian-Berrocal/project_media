@@ -3,6 +3,9 @@
 :root {
     --primary-color: #fff;
     --secondary-color: #bbb;
+    --primary-bg: #111;
+    --secondary-bg: #222;
+    --tertiary-bg: #444;
 }
 
 *::before, *, *::after {
@@ -32,6 +35,7 @@
     border: none;
     color: var(--primary-color);
     font-size: 1.2em;
+    cursor: pointer;
 }
 
 /* ----------- BODY ----------- */
@@ -44,7 +48,7 @@ body {
 /* ----------- YT-HEADER ----------- */
 
 #yt-header {
-    background-color: #222;
+    background-color: var(--secondary-bg);
     height: 7vh;
     width: 100vw;
     position: fixed;
@@ -78,16 +82,50 @@ body {
 
 /* ----------- YT-SEARCH ----------- */
 
+#yt-search {
+    width: 35%;
+}
 
+#yt-search input {
+    width: 100%;
+    background-color: var(--primary-bg);
+    height: 2rem;
+    border: 1px solid #111;
+    color: var(--secondary-color);
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+#yt-search input:focus {
+    border-color: rgba(0, 132, 255, 0.582);
+}
+
+#yt-search button.search-button {
+    padding: 0 20px;
+    background-color: var(--tertiary-bg);
+    font-size: 1rem;
+}
+
+#yt-search button.voice-search-button {
+    margin-left: 1rem;
+}
 
 /* ----------- YT-USER ----------- */
 
+#yt-user {
+    width: 8%;
+    justify-content: space-between;
+}
 
+#yt-user img {
+    border-radius: 50%;
+}
 
 /* ----------- YT-CONTENT ----------- */
 
 #yt-content {
-    background-color: #111;
+    background-color: var(--primary-bg);
     position: absolute;
     padding: 9vh 5vw;
 }
